@@ -1,6 +1,7 @@
 package com.singnjh.bookmarketapi.controller;
 
-import com.singnjh.bookmarketapi.domain.BookMarkDto;
+import com.singnjh.bookmarketapi.domain.BookMarkDTO;
+import com.singnjh.bookmarketapi.domain.BookMarksDto;
 import com.singnjh.bookmarketapi.service.BookMarkService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,7 +15,7 @@ public class BookMarkController {
     private BookMarkService bookMarkService;
 
     @GetMapping("/api/bookmarks")
-    public BookMarkDto getBookMarks(@RequestParam(name= "page" , defaultValue = "1") Integer page){
+    public BookMarksDto getBookMarks(@RequestParam(name= "page" , defaultValue = "1") Integer page){
         return bookMarkService.getBookMarks(page);
     }
 
