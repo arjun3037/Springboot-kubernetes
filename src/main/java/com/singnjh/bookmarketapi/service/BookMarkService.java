@@ -1,6 +1,6 @@
 package com.singnjh.bookmarketapi.service;
 
-import com.singnjh.bookmarketapi.domain.BookMark;
+
 import com.singnjh.bookmarketapi.domain.BookMarkDto;
 import com.singnjh.bookmarketapi.repo.BookMarkRepo;
 
@@ -11,8 +11,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.List;
 
 @Service
 @Transactional
